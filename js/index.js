@@ -1,4 +1,4 @@
-var totalWidth = 600;
+var totalWidth = 500;
 var totalHeight = 600;
 
 var margin = {
@@ -189,7 +189,7 @@ canvasGroup
  .attr("r", function(d) {
     return 5;
   })
- 
+
   .transition()
   .duration(2000)
 .attr("cy", function(d) {
@@ -214,12 +214,12 @@ canvasGroup
 
  var cg = $("#circleGroup").children();
 
-setTimeout(function(){ 
+setTimeout(function(){
 
   setTimeout(function(){ $(".scatterplot-info img").attr("src", `${sourcesImg[0]}`);
 $(".scatterplot-info-metrics h2").html("Total Contribution");
 $(".scatterplot-info-metrics h1").html(`50%`); }, 500);
-  
+
 
 d3
   .select(cg[0])

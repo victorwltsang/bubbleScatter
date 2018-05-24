@@ -1,0 +1,76 @@
+body {
+  background-color: #444;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.scatterplot-flex .label {
+  fill: #fff;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+.scatterplot-flex text {
+  fill: #555;
+}
+
+.scatterplot-flex .domain,
+.scatterplot-flex line {
+  stroke: #555;
+}
+
+.scatterplot-flex .focusLine {
+  shape-rendering: crispEdges;
+  stroke: #555;
+  stroke-width: 1.1;
+  stroke-linecap: butt;
+}
+
+.scatterplot-flex .pulse {
+  fill: white;
+  fill-opacity: 1;
+  stroke-width: 2px;
+  stroke: white;
+  r: 35;
+  animation-duration: 1.5s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    stroke-width: 30px;
+    stroke-opacity: 1;
+  }
+  to {
+    stroke-width: 0px !important;
+    stroke-opacity: 0;
+  }
+}
+.scatterplot-flex {
+  display: flex;
+  padding: 20px;
+}
+.scatterplot-info {
+  padding-top: 20px;
+}
+.scatterplot-info img {
+  width: auto;
+  height: 300px;
+}
+.scatterplot-info-metrics {
+  padding: 30px;
+  color: white;
+}
+.scatterplot-info-metrics h1,
+.scatterplot-info-metrics h2 {
+  margin: 0;
+}
+.scatterplot-info-metrics h1 {
+  font-size: 400%;
+}
+.scatterplot-info-metrics h2 {
+  font-size: 200%;
+}
